@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Music Classroom with Interactive Activities and Private Lessons">
+    <title>Music Classroom</title>
+    <link rel="stylesheet" href="styles.css"> <!-- External CSS for styling -->
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#activities">Music Activities</a></li>
+                <li><a href="#private-lessons">Private Lessons</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Homepage Section -->
+    <section id="home">
+        <div class="welcome">
+            <h1>Welcome to Your Music Classroom</h1>
+            <p>Explore our interactive music activities and book private lessons for personalized learning.</p>
+        </div>
+    </section>
+
+    <!-- Music Activities Section -->
+    <section id="activities">
+        <h2>Music Activities</h2>
+        <div class="activity-list">
+            <div class="activity">
+                <h3>Rhythm Trainer</h3>
+                <p>Practice your rhythms with interactive beats.</p>
+                <a href="#">Try it now</a>
+            </div>
+            <div class="activity">
+                <h3>Music Theory Quizzes</h3>
+                <p>Test your knowledge on scales, intervals, and more.</p>
+                <a href="#">Take a quiz</a>
+            </div>
+            <div class="activity">
+                <h3>Virtual Piano</h3>
+                <p>Play scales, chords, and melodies on a virtual piano.</p>
+                <a href="#">Start playing</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Private Lessons Section -->
+    <section id="private-lessons">
+        <h2>Private Lessons</h2>
+        <p>Sign up for one-on-one sessions to deepen your musical skills.</p>
+        <div class="lesson-booking">
+            <h3>Book a Lesson</h3>
+            <form action="book-lesson.php" method="POST">
+                <label for="student-name">Name:</label>
+                <input type="text" id="student-name" name="student-name" required>
+                <label for="lesson-time">Preferred Lesson Time:</label>
+                <input type="datetime-local" id="lesson-time" name="lesson-time" required>
+                <button type="
